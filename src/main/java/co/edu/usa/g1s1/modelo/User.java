@@ -24,10 +24,10 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
     @Column(unique = true)
     private String email;
     private String password;
+    private String name;
 
     public Integer getId() {
         return id;
